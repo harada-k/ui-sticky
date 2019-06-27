@@ -12,7 +12,8 @@ CodeGridの記事を元に、スティッキーナビを作成
     - `.Nav`が`fixed`になるタイミングで、`.Content`の上方向にマージンまたはパディングを付け、逆の場合は外す
     - `.Nav`に高さを持たせ、`position:fixed`にするのは`.Nav-list`にする（マージンやパディングの付け外しは処理の回数が増えるので、これが良さげ）
 - `getBoundingClientRect()`で要素のサイズとビューポートからの位置を取得できる
-    - 結果はオブジェクトなので、プロパティ名を指定して値を取得できます　例）`element.getBoundingClientRect().top`
+    - 結果はオブジェクトなので、プロパティ名を指定して値を取得する  
+    例）`element.getBoundingClientRect().top`
 
 ## 課題
 - スクロールイベントが高頻度で発生するので、throttle処理を行ってイベントハンドラの実行回数を間引いてみる。
